@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Minimal code */
+  .parent {
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+  }
+  
+  .child {
+    scroll-snap-align: center;
+  }
+  
+  /* Some additional code to make it pretty */
+  
+  .child {
+    height: 90vh;
+    margin: 5vh;
+    display: grid;
+    place-items: center;
+    font-size: 6vw;
+    line-height: 1.4;
+    color: #000a;
+    background: hsl(100, 50%, 60%);
+    padding: 1em;
+  }
+  
+  .child:nth-child(2) {
+    background: hsl(125, 50%, 60%);
+  }
+  
+  .child:nth-child(3) {
+    background: hsl(150, 50%, 60%);
+  }
+  
+  .child:nth-child(4) {
+    background: hsl(175, 50%, 60%);
+  }
+  
+  .child:nth-child(5) {
+    background: hsl(200, 50%, 60%);
+  }
+  
+  code {
+    background: #fff6;
+    padding: .1em .3em;
+    border-radius: .2em;
+    white-space: nowrap;
+  }
